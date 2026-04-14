@@ -13,19 +13,19 @@ public class Main {
         p.price = sc.nextDouble();
         p.quantity = sc. nextInt();
 
-        System.out.println("Dados do produto: " + p.name + ", " + p.price + ", " + p.quantity);
+        System.out.println(p);
 
         System.out.println("Digite a quantidade de produtos a serem adicionados no estoque");
         int q = sc.nextInt();
         p.AddProduct(q);;
 
-        System.out.println("Dados atualizados do produto: " + p.name + ", " + p.price + ", " + p.quantity);
+        System.out.println("Dados atualizados do produto: " + p);
 
         System.out.println("Digite a quantidade de produtos a serem removidos no estoque");
         q = sc.nextInt();
         p.RemoveProduct(q);
 
-        System.out.println("Dados atualizados do produto: " + p.name + ", " + p.price + ", " + p.quantity);
+        System.out.println("Dados atualizados do produto: " + p);
 
         sc.close();
     }
